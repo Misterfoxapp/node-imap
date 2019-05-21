@@ -1,3 +1,9 @@
+#### 0.8.21 (2019-05-21)
+
+##### Bug Fixes
+
+*  add nvmrc ([2761248b](https://github.com/mscdex/node-imap/commit/2761248b0bc6ce3d7b3e841328e0a5cf3db8ca33))
+
 #### 0.8.20 (2019-05-21)
 
 ##### Bug Fixes
