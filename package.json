@@ -1,6 +1,7 @@
-{ "name": "imap",
+{
+  "name": "@fox/imap",
   "version": "0.8.19",
-  "author": "Brian White <mscdex@mscdex.net>",
+  "author": "Brian White <mscdex@mscdex.net> - foxintelligence",
   "description": "An IMAP module for node.js that makes communicating with IMAP servers easy",
   "main": "./lib/Connection",
   "dependencies": {
@@ -8,10 +9,30 @@
     "readable-stream": "1.1.x"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "release:major": "./node_modules/generate-changelog/bin/generate -M && git add CHANGELOG.md && git commit -m 'changelog updated' && npm version major && git push origin && git push origin --tags && npm publish",
+    "release:minor": "./node_modules/generate-changelog/bin/generate -m && git add CHANGELOG.md && git commit -m 'changelog updated' && npm version minor && git push origin && git push origin --tags && npm publish",
+    "release:patch": "./node_modules/generate-changelog/bin/generate -p && git add CHANGELOG.md && git commit -m 'changelog updated' && npm version patch && git push origin && git push origin --tags && npm publish"
   },
-  "engines": { "node": ">=0.8.0" },
-  "keywords": [ "imap", "mail", "email", "reader", "client" ],
-  "licenses": [ { "type": "MIT", "url": "http://github.com/mscdex/node-imap/raw/master/LICENSE" } ],
-  "repository": { "type": "git", "url": "http://github.com/mscdex/node-imap.git" }
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "keywords": [
+    "imap",
+    "mail",
+    "email",
+    "reader",
+    "client"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/mscdex/node-imap/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mscdex/node-imap.git"
+  }
 }
