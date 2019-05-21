@@ -1,3 +1,9 @@
+#### 0.8.22 (2019-05-21)
+
+##### Bug Fixes
+
+*  add registry to push on nexus ([97f59e46](https://github.com/mscdex/node-imap/commit/97f59e463a015095e5a336f3fb1cdbe3f48dea46))
+
 #### 0.8.21 (2019-05-21)
 
 ##### Bug Fixes
