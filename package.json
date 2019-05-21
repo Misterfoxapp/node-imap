@@ -13,6 +13,9 @@
     "generate-changelog": "^1.7.1",
     "mocha": "^5.2.0"
   },
+  "publishConfig": {
+    "registry": "https://nexus.internal.foxapi.xyz/repository/npm-private/"
+  },
   "scripts": {
     "test": "node test/test.js",
     "lint": "eslint --ext .js --ignore-path .gitignore .",
