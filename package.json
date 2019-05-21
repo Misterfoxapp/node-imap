@@ -1,6 +1,6 @@
 {
   "name": "@fox/imap",
-  "version": "0.8.19",
+  "version": "0.8.20",
   "author": "Brian White <mscdex@mscdex.net> - foxintelligence",
   "description": "An IMAP module for node.js that makes communicating with IMAP servers easy",
   "main": "./lib/Connection",
